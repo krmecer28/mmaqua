@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #025370;
+    height: 138px;
+    display: flex;
+    align-items: center;
+}
+
+#logo-img {
+    height: 60px;
+}
+
+.brand {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.link-list {
+    display: flex;
+    list-style-type: none;
+    color: white;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.links li a {
+    font-size: 18px;
+}
+
+.links li div:hover {
+    transform: scale(1.1);
+}
+
+#slider-buton {
+    background-color: #025370;
+    border: none;
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+
+.slidermenu {
+    background-color: #025370;
+    transition: all 0.5s;
+    height: 0;
+}
+
+.sliderlist {
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    margin-top: -30px;
+}
+
+.sliderlist div:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1000px) {
+    .links {
+        margin-right: -170px;
+    }
+
+    #logo-img {
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .links {
+        display: none;
+    }
+    #slider-buton {
+        display: block;
+        margin-right: 20px;
+    }
+    #logo-img {
+        margin-left: -20px;
+    }
+    .spacebox {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #slider-buton {
+        font-size: 30px;
+    }
+    #logo-img {
+        height: 40px;
+        margin-left: -20px;
+    }
+    .navbar {
+        height: 90px;
+    }
+}
