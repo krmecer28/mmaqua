@@ -19,10 +19,67 @@
     background-image: url("../../images/hero.jpg");
 }
 
+.aboutus {
+    display: flex;
+    gap: 50px;
+    padding: 1cm;
+}
 
+.about-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.about-right-second {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#about-logo {
+    width: 100%;
+}
+
+#about-img {
+    width: 100%;
+}
+
+#abouth1 {
+    font-size: 60px;
+}
+
+@media only screen and (max-width: 720px) {
+    .aboutus {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .about-right {
+        display: none;
+    }
+    .about-left {
+        width: 100%;
+    }
+    .about-right-second {
+        display: flex;
+    }
+}
 
 @media only screen and (max-width: 650px) {
     .jumbotron h5 {
         font-size: 40px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    #abouth1 {
+        font-size: 45px;
     }
 }
