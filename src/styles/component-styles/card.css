@@ -1,0 +1,33 @@
+.product-card {
+    width: 18rem;
+    border:1px solid gray;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#card-btn {
+    width: 100%;
+}
+
+#card-img {
+    width: 286px;
+    height: 16rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .product-card {
+        width: 14rem;
+        height: 350px;
+    }
+    #card-img {
+        width: 200px;
+    }
+  }
