@@ -48,9 +48,11 @@ const Home = () => {
       </div>
       <hr />
       <div className='shop' id='shop'>
-      <h2 style={{textAlign: "center", fontSize: "50px", color: "#025370"}}>Our Products</h2>
+      <h2 id='shop-h1'>OUR PRODUCTS</h2>
       <br /><br />
-      <button className='slider-button left-button' onClick={() => handleScroll('left')}>&#10094;</button>
+      <button className='slider-button left-button' onClick={() => handleScroll('left')}>
+      <i class="fa-solid fa-chevron-left"></i>
+      </button>
       <div className='card-group' ref={sliderRef}>
         <Card image={logo} name="DENEME" price="1000"/>
         <Card image={logo} name="DENEME" price="1000"/>
@@ -65,25 +67,10 @@ const Home = () => {
         <Card image={logo} name="DENEME" price="1000"/>
         <Card image={logo} name="DENEME" price="1000"/>
       </div>
-      <button className='slider-button right-button' onClick={() => handleScroll('right')}>&#10095;</button>
+      <button className='slider-button right-button' onClick={() => handleScroll('right')}>
+      <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
-      {/* <div className='shop' id='shop'>
-        <h2>Our Products</h2>
-        <div className='card-group'>
-          <Card image={logo} name="DENEME" price="1000"/>
-          <Card image={logo} name="DENEME" price="1000"/>
-          <Card image={logo} name="DENEME" price="1000"/>
-          <Card image={logo} name="DENEME" price="1000"/>
-          <Card image={logo} name="DENEME" price="1000"/>
-          <Card image={logo} name="DENEME" price="1000"/>
-          <Card image={logo} name="DENEME" price="1000"/>
-          <Card image={logo} name="DENEME" price="1000"/>
-          <Card image={logo} name="DENEME" price="1000"/>
-          <Card image={logo} name="DENEME" price="1000"/>
-          <Card image={logo} name="DENEME" price="1000"/>
-          <Card image={logo} name="DENEME" price="1000"/>
-        </div>
-      </div> */}
     </div>
   )
 }
